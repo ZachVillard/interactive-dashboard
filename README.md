@@ -3,6 +3,7 @@
   <dt>Description</dt>
   <dd>This project is a web-based dashboard built for WEB-115 to demonstrate interactive JavaScript features.</dd>
 </dl>
+
 ## TODO: Future Enhancements
 
 - [ ] Add a metric conversion tool.
