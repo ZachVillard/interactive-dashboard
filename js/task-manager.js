@@ -16,7 +16,7 @@ function weeklyGoal(userName, dailyGoal, bonusTasks) {
     document.getElementById("goal-message").innerHTML = output;
 };
 const btn = document.getElementById("goal-btn");
-btn.getElementById("goal-btn").addEventListener("click", function(event){
+btn.addEventListener("click", function(event){
     event.preventDefault();
 
     // Declare variables and values
