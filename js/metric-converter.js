@@ -39,8 +39,8 @@ function conversion(number) {
   document.getElementById("convertOutput").innerHTML = number;
 };
 
-const btn = document.getElementById("convert-btn");
-btn.addEventListener("click", function(event) {
+const convertBtn = document.getElementById("convert-btn");
+convertBtn.addEventListener("click", function(event) {
     event.preventDefault();
     var number = document.getElementById("numInput").value;
     number = parseFloat(number);
