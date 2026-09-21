@@ -8,9 +8,9 @@ function conversion(number) {
   var m_to_yd = 1.09;
   var km_to_mi = 0.62;
 
-  var choice = document.getElementById("convert").value;
+  var choice = document.getElementById("convert").selectedIndex;
 
-  if (choice === document.getElementById("in_To_cm").value) {
+  if (choice === document.getElementsByTagName("in_To_cm").value) {
     number = number * in_to_cm;
     number = number.toFixed(2);
   } else if (choice === document.getElementById("ft_To_cm").value) {
