@@ -10,7 +10,7 @@ function conversion(number) {
 
   var choice = document.getElementById("convert").selectedIndex;
 
-  if (choice === document.getElementsByTagName("in_To_cm").value) {
+  if (choice === document.getElementsByTagName("in_To_cm")[choice].value) {
     number = number * in_to_cm;
     number = number.toFixed(2);
   } else if (choice === document.getElementById("ft_To_cm").value) {
