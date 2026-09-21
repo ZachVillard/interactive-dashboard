@@ -1,5 +1,4 @@
 function conversion(number) {
-
   var in_to_cm = 2.54;
   var ft_to_cm = 30.48;
   var yd_to_m = 0.91;
