@@ -10,28 +10,28 @@ function conversion(number) {
 
   var choice = document.getElementById("convert").selectedIndex;
 
-  if (choice === document.getElementsByTagName("option")[choice]) {
+  if (choice === document.getElementsByTagName("option")[choice].value) {
     number = number * in_to_cm;
     number = number.toFixed(2);
-  } else if (choice === document.getElementById("ft_To_cm").value) {
+  } else if (choice === document.getElementsByTagName("option")[choice].value) {
     number = number * ft_to_cm;
     number = number.toFixed(2);
-  } else if (choice === document.getElementById("yd_To_m").value) {
+  } else if (choice === document.getElementsByTagName("option")[choice].value) {
     number = number * yd_to_m;
     number = number.toFixed(2);
-  } else if (choice === document.getElementById("mi_To_km").value) {
+  } else if (choice === document.getElementsByTagName("option")[choice].value) {
     number = number * mi_to_km;
     number = number.toFixed(2);
-  } else if (choice === document.getElementById("cm_To_in").value) {
+  } else if (choice === document.getElementsByTagName("option")[choice].value) {
     number = number * cm_to_in;
     number = number.toFixed(2);
-  } else if (choice === document.getElementById("cm_To_ft").value) {
+  } else if (choice === document.getElementsByTagName("option")[choice].value) {
     number = number * cm_to_ft;
     number = number.toFixed(4); // Only this one uses 4 decimal places
-  } else if (choice === document.getElementById("m_To_yd").value) {
+  } else if (choice === document.getElementsByTagName("option")[choice].value) {
     number = number * m_to_yd;
     number = number.toFixed(2);
-  } else if (choice === document.getElementById("km_To_mi").value) {
+  } else if (choice === document.getElementsByTagName("option")[choice].value) {
     number = number * km_to_mi;
     number = number.toFixed(2);
   }
