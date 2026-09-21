@@ -14,6 +14,8 @@
         document.write("This dashboard demonstrates how JavaScript can be used to create interactive websites.");
         //The <noscript> is for web browsers with JavaScript rendering disabled.
     </script>
+    <br>
+    <br>
     <noscript>
             document.write("Unfortunately, your web browser does not support JavaScript.");
     </noscript>
@@ -28,6 +30,26 @@
                 <p id="goal-message"></p>
                 <script src="js/task-manager.js" defer></script>
             </div>
+            <br>
+            <br>
+            <div class="col" id="metric-converter">
+                Input Number: <input type="text" id="numInput"><br>
+                <select id="convert" name="Select Measurement">
+                    <option value="in_To_cm">Inches to Centimeters</option>
+                    <option value="ft_To_cm">Feet to Centimeters</option>
+                    <option value="yd_To_m">Yards to Meters</option>
+                    <option value="mi_To_km">Miles to Kilometers</option>
+                    <option value="cm_To_in">Centimeters to Inches</option>
+                    <option value="cm_To_ft">Centimeters to Feet</option>
+                    <option value="m_To_yd">Meters to Yards</option>
+                    <option value="km_To_mi">Kilometers to Miles</option>
+                </select><br>
+                <button type="button" id="convert-btn">Convert</button>
+                <p id="convertOutput"></p>
+                <script src="js/metric-converter.js" defer></script>
+            </div>
+            <br>
+            <br>
         </div>
     </div>
 </body>
