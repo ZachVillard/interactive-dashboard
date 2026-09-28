@@ -1,6 +1,6 @@
-var answer = Answers(6);
+var answers = Answer(6);
 function displayAnswer() {
-    let index = Math.floor(Math.random() * Answers.length);
+    let index = Math.floor(Math.random() * answers.length);
     document.getElementById("circle").innerHTML = index;
 }
 let ballMouseDown = document.getElementById("ball");
