@@ -1,4 +1,4 @@
-var answer = Answers(6);
+var Answers = [1, 2, 3, 4, 5, 6];
 function displayAnswer() {
     let index = Math.floor(Math.random() * Answers.length);
     document.getElementById("circle").innerHTML = index;
