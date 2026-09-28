@@ -6,8 +6,8 @@
 
 ## TODO: Future Enhancements
 
-- [ ] Add a metric conversion tool.
-- [ ] Integrate a task list with array storage.
+- [X] Add a metric conversion tool.
+- [X] Integrate a task list with array storage.
 - [ ] Add JavaScript logic for a live clock.
 - [X] Add a weekly task goal calculator
 
@@ -101,3 +101,6 @@ ELSE IF the user wishes to convert kilometers to miles:
 OUTPUT number
 
 END
+
+#### Eight Ball Game
+	<p>This program will ask you to type in a yes or no question in a text box, then you will be allowed to click on the eight ball image to get an answer displayed on it. The program has six possibilities and will only choose one by random. Click restart if you want to start over.</p>
