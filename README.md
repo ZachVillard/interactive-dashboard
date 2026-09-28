@@ -103,4 +103,4 @@ OUTPUT number
 END
 
 #### Eight Ball Game
-	<p>This program will ask you to type in a yes or no question in a text box, then you will be allowed to click on the eight ball image to get an answer displayed on it. The program has six possibilities and will only choose one by random. Click restart if you want to start over.</p>
+<p>This program will ask you to type in a yes or no question in a text box, then you will be allowed to click on the eight ball image to get an answer displayed on it. The program has six possibilities and will only choose one by random. Click restart if you want to start over.</p>
