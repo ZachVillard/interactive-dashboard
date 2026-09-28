@@ -21,7 +21,7 @@
   to convert it to a certain measurement to a different kind of measurement. For example, if a user inputs 1 and converts it from inches to centimeters, their input will be multiplied by 
   2.54 to reach 1 centimeter for output.</p>
 
-### Logic and Pseudocode
+## Logic and Pseudocode
 BEGIN
 
 SET in_to_cm to 2.54
@@ -102,5 +102,5 @@ OUTPUT number
 
 END
 
-#### Eight Ball Game
-	<p>This program will ask you to type in a yes or no question in a text box, then you will be allowed to click on the eight ball image to get an answer displayed on it. The program has six possibilities and will only choose one by random. Click restart if you want to start over.</p>
+## Eight Ball Game
+<p>This program will ask you to type in a yes or no question in a text box, then you will be allowed to click on the eight ball image to get an answer displayed on it. The program has six possibilities and will only choose one by random. Click restart if you want to start over.</p>
