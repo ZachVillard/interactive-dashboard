@@ -104,3 +104,6 @@ END
 
 ## Eight Ball Game
 <p>This program will ask you to type in a yes or no question in a text box, then you will be allowed to click on the eight ball image to get an answer displayed on it. The program has six possibilities and will only choose one by random. Click restart if you want to start over.</p>
+
+## Task Manager DOM
+<p>This program will simply add a task you enter and submit within it's task list. It will display once you click the "Add Task" button.<p>
