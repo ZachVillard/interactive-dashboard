@@ -29,7 +29,7 @@ btn.addEventListener("click", function(event){
 });
 let newEl = document.createElement("ul");
 newEl.id = "user-tasks";
-newEl.id.appendChild("task-list");
+document.getElementById("user-tasks").appendChild("task-list");
 const addTaskBtn = document.getElementById("add-task");
 addTaskBtn.addEventListener("click", function(event){
     event.preventDefault();
