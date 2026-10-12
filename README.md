@@ -12,14 +12,14 @@
 - [X] Add a weekly task goal calculator
 
 ## Weekly Task Goals
-  <p>The featured calculator provides the user with the total amount of tasks per week,
-  multiplying daily tasks by five and also additional tasks outside of the user's
-  primary goal.</p>
+<p>The featured calculator provides the user with the total amount of tasks per week,
+multiplying daily tasks by five and also additional tasks outside of the user's
+primary goal.</p>
 
 ## Imperial/Metric Converter
-  <p>This program will take any number a user will input, then give them an option
-  to convert it to a certain measurement to a different kind of measurement. For example, if a user inputs 1 and converts it from inches to centimeters, their input will be multiplied by 
-  2.54 to reach 1 centimeter for output.</p>
+<p>This program will take any number a user will input, then give them an option
+to convert it to a certain measurement to a different kind of measurement. For example, if a user inputs 1 and converts it from inches to centimeters, their input will be multiplied by 
+2.54 to reach 1 centimeter for output.</p>
 
 ## Logic and Pseudocode
 BEGIN
