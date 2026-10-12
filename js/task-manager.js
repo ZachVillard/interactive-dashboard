@@ -29,11 +29,17 @@ btn.addEventListener("click", function(event){
 });
 let newEl = document.createElement("ul");
 newEl.id = "user-tasks";
-document.getElementById("user-tasks").appendChild("task-list");
+document.getElementById("task-list").appendChild(newEl);
+
 const addTaskBtn = document.getElementById("add-task");
 addTaskBtn.addEventListener("click", function(event){
     event.preventDefault();
-    myTasks.push(document.getElementById("task-name").value);
-    let li = document.createElement("li");
-    li.appendChild(document.getElementById("user-tasks"));
+    const taskName = document.getElementById("task-name").value;
+    if(taskName) {
+        myTasks.push(taskName);
+        let li = document.createElement("li");
+        li.textContent = taskName;
+        document.getElementById("user-tasks").appendChild(li);
+        document.getElementById("task-name").value = "";
+    }
 });
