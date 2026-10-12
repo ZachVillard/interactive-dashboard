@@ -1,3 +1,4 @@
+let myTasks = [];
 function weeklyGoal(userName, dailyGoal, bonusTasks) {
     // Weekly Goal: Calculate the total weekly task goal for a user.
         
@@ -25,4 +26,14 @@ btn.addEventListener("click", function(event){
     bonusTasks = parseInt(document.getElementById("wbt").value);
 
     weeklyGoal(userName, dailyGoal, bonusTasks);
+});
+let newEl = document.createElement("ul");
+newEl.id = "user-tasks";
+newEl.id.appendChild("task-list");
+const addTaskBtn = document.getElementById("add-task");
+addTaskBtn.addEventListener("click", function(event){
+    event.preventDefault();
+    myTasks.push(document.getElementById("task-name").value);
+    let li = document.createElement("li");
+    li.appendChild(document.getElementById("user-tasks"));
 });
