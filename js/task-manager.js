@@ -45,12 +45,16 @@ sbmtTaskBtn.addEventListener("click", function(event){
 });
 function addTask(task) {
     myTasks.push(task);
+    document.getElementById("user-tasks").appendChild(task);
+    console.log(JSON.stringify(myTasks));
 };
 function taskComplete(task) {
     task.style.textDecoration = "line-through";
+    console.log(JSON.stringify(myTasks));
 };
 function deleteTask(task) {
     task.remove();
+    console.log(JSON.stringify(myTasks));
 };
 const addTaskBtn = document.getElementById("add-task");
 addTaskBtn.addEventListener("click", function(event){
