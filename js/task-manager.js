@@ -68,7 +68,7 @@ addTaskBtn.addEventListener("click", function(event){
     if (myTasks.length > 0) {
         taskComplete(myTasks.value);
     }});
-const deleteTaskBtn = document.getElementById("delete-task");
+const deleteTaskBtn = document.getElementById("delete-btn");
 deleteTaskBtn.addEventListener("click", function(event){
     event.preventDefault();
     if (myTasks.length > 0) {
