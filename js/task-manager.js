@@ -55,7 +55,7 @@ function deleteTask(task) {
     task.remove();
     console.log(JSON.stringify(myTasks));
 };
-const addTaskBtn = document.getElementById("add-task");
+const addTaskBtn = document.getElementById("submit-task");
 addTaskBtn.addEventListener("click", function(event){
     event.preventDefault();
     console.log(myTasks.value);
@@ -64,10 +64,7 @@ addTaskBtn.addEventListener("click", function(event){
     }
     if (myTasks[0] = document.getElementById("highOrLow").value === "high") {
         myTasks[0].style.color = "red";
-    }});
-const completeTaskBtn = document.getElementById("complete-task");
-completeTaskBtn.addEventListener("click", function(event){
-    event.preventDefault();
+    }
     if (myTasks.length > 0) {
         taskComplete(myTasks.value);
     }});
