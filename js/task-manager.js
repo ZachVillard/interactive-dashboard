@@ -41,8 +41,7 @@ sbmtTaskBtn.addEventListener("click", function(event){
         li.textContent = enterTask;
         document.getElementById("user-tasks").appendChild(li);
         document.getElementById("enter-task").value = "";
-    }
-});
+    }});
 function addTask(task) {
     myTasks.push(task);
     document.getElementById("user-tasks").appendChild(task);
@@ -65,19 +64,16 @@ addTaskBtn.addEventListener("click", function(event){
     }
     if (myTasks[0] = document.getElementById("highOrLow").value === "high") {
         myTasks[0].style.color = "red";
-    }
-});
+    }});
 const completeTaskBtn = document.getElementById("complete-task");
 completeTaskBtn.addEventListener("click", function(event){
     event.preventDefault();
     if (myTasks.length > 0) {
         taskComplete(myTasks.value);
-    }
-});
+    }});
 const deleteTaskBtn = document.getElementById("delete-task");
 deleteTaskBtn.addEventListener("click", function(event){
     event.preventDefault();
     if (myTasks.length > 0) {
         deleteTask(myTasks.value);
-    }
-});
+    }});
