@@ -42,6 +42,7 @@ sbmtTaskBtn.addEventListener("click", function(event){
         document.getElementById("user-tasks").appendChild(li);
         document.getElementById("enter-task").value = "";
     }});
+
 function addTask(task) {
     myTasks.push(task);
     document.getElementById("user-tasks").appendChild(task);
@@ -55,7 +56,7 @@ function deleteTask(task) {
     task.remove();
     console.log(JSON.stringify(myTasks));
 };
-const addTaskBtn = document.getElementById("submit-task");
+const addTaskBtn = document.getElementById("submit-btn");
 addTaskBtn.addEventListener("click", function(event){
     event.preventDefault();
     console.log(myTasks.value);
