@@ -59,7 +59,7 @@ function deleteTask(task) {
 const addTaskBtn = document.getElementById("add-task");
 addTaskBtn.addEventListener("click", function(event){
     event.preventDefault();
-    
+    console.log(myTasks.value);
     if (myTasks.length > 0) {
         addTask(myTasks.value);
     }
