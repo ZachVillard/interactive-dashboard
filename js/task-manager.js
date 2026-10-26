@@ -49,6 +49,7 @@ function addTask(task) {
     l.textContent = task;
     document.getElementById("user-tasks").appendChild(l);
     console.log(JSON.stringify(myTasks));
+    console.log(myTasks[0]);
 };
 function taskComplete(task) {
     task.style.textDecoration = "line-through";
@@ -61,7 +62,6 @@ function deleteTask(task) {
 const addTaskBtn = document.getElementById("submit-btn");
 addTaskBtn.addEventListener("click", function(event){
     event.preventDefault();
-    console.log(myTasks[0]);
     if (myTasks.length > 0) {
         addTask(myTasks[0]);
     }
