@@ -33,10 +33,23 @@
                     <h3>Weekly Task List</h3>
                     <p>Enter a task below to manage your goals.</p>
                     <form>
-                        <label for="task-name">Enter task:</label>
-                        <input type="text" id="task-name">
-                        <button type="button" id="add-task">Add Task</button>
+                        <label for="enter-task">Enter task:</label>
+                        <input type="text" id="enter-task">
+                        <button type="button" id="submit-task">Submit Task</button>
                     </form>
+                </div>
+                <div>
+                    <h3>Task Manager</h3>
+                    Task Name: <input type="text" id="taskName"><br>
+                    <select id="highOrLow" name="Task Priority">
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select><br>
+                    <input type="checkbox" id="important">
+                    <label for="important">Important</label>
+                    <button type="button" id="submit-btn">Submit</button>
+                    <button type="button" id="delete-btn">Delete List</button>
                 </div>
             </div>
             <br>

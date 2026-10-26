@@ -31,15 +31,48 @@ let newEl = document.createElement("ul");
 newEl.id = "user-tasks";
 document.getElementById("task-list").appendChild(newEl);
 
+const sbmtTaskBtn = document.getElementById("submit-task");
+sbmtTaskBtn.addEventListener("click", function(event){
+    event.preventDefault();
+    const enterTask = document.getElementById("enter-task").value;
+    if(enterTask) {
+        myTasks.push(enterTask);
+        let li = document.createElement("li");
+        li.textContent = enterTask;
+        document.getElementById("user-tasks").appendChild(li);
+        document.getElementById("enter-task").value = "";
+    }
+});
+function addTask(task) {
+    myTasks.push(task);
+};
+function taskComplete(task) {
+    task.style.textDecoration = "line-through";
+};
+function deleteTask(task) {
+    task.remove();
+};
 const addTaskBtn = document.getElementById("add-task");
 addTaskBtn.addEventListener("click", function(event){
     event.preventDefault();
-    const taskName = document.getElementById("task-name").value;
-    if(taskName) {
-        myTasks.push(taskName);
-        let li = document.createElement("li");
-        li.textContent = taskName;
-        document.getElementById("user-tasks").appendChild(li);
-        document.getElementById("task-name").value = "";
+    if (myTasks.length > 0) {
+        addTask(myTasks[0]);
+    }
+    if (myTasks[0] = document.getElementById("highOrLow").value === "high") {
+        myTasks[0].style.color = "red";
+    }
+});
+const completeTaskBtn = document.getElementById("complete-task");
+completeTaskBtn.addEventListener("click", function(event){
+    event.preventDefault();
+    if (myTasks.length > 0) {
+        taskComplete(myTasks[0]);
+    }
+});
+const deleteTaskBtn = document.getElementById("delete-task");
+deleteTaskBtn.addEventListener("click", function(event){
+    event.preventDefault();
+    if (myTasks.length > 0) {
+        deleteTask(myTasks[0]);
     }
 });
