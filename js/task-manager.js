@@ -50,6 +50,9 @@ function addTask(task) {
     document.getElementById("user-tasks").appendChild(l);
     console.log(JSON.stringify(myTasks));
     console.log(myTasks[0]);
+    if (l = document.getElementById("highOrLow").value === "high") {
+        l.style.color = "red";
+    }
 };
 function taskComplete(task) {
     task.style.textDecoration = "line-through";
@@ -64,9 +67,6 @@ addTaskBtn.addEventListener("click", function(event){
     event.preventDefault();
     if (myTasks.length > 0) {
         addTask(myTasks[0]);
-    }
-    if (myTasks[0] = document.getElementById("highOrLow").value === "high") {
-        myTasks[0].style.color = "red";
     }
     if (myTasks.length > 0) {
         taskComplete(myTasks[0]);
