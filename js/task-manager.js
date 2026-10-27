@@ -67,7 +67,7 @@ const addTaskBtn = document.getElementById("submit-btn");
 addTaskBtn.addEventListener("click", function(event){
     event.preventDefault();
     
-    task = document.getElementById("taskName").value;
+    const task = document.getElementById("taskName").value;
     if (task != "") {
         addTask(task);
     }
