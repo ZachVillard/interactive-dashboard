@@ -63,7 +63,6 @@ function deleteTask(task) {
     task.remove();
     console.log(JSON.stringify(myTasks));
 };
-
 const addTaskBtn = document.getElementById("submit-btn");
 addTaskBtn.addEventListener("click", function(event){
     event.preventDefault();
