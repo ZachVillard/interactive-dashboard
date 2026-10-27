@@ -42,8 +42,10 @@ sbmtTaskBtn.addEventListener("click", function(event){
         document.getElementById("user-tasks").appendChild(li);
         document.getElementById("enter-task").value = "";
     }});
+    
 let detailedTasks = {}
 let importantTask = document.getElementById("important");
+
 function addTask(task) {
     detailedTasks[task] = { completed: false };
     let l = document.createElement("l");
@@ -84,6 +86,8 @@ addTaskBtn.addEventListener("click", function(event){
         addTask(task);
     }
     taskComplete(task);
+    detailedTasks.push(task);
+    task = "";
 });
 const deleteListBtn = document.getElementById("delete-btn");
 deleteListBtn.addEventListener("click", function(event){
