@@ -49,6 +49,7 @@ function addTask(task) {
     l.textContent = task;
     l.id = "task";
     document.getElementById("taskName").appendChild(l);
+    document.getElementById("taskName").value = "";
     console.log(JSON.stringify(myTasks));
     console.log(l);
     if (l = document.getElementById("highOrLow").value === "high") {
