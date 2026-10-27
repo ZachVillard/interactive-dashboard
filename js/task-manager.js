@@ -42,26 +42,34 @@ sbmtTaskBtn.addEventListener("click", function(event){
         document.getElementById("user-tasks").appendChild(li);
         document.getElementById("enter-task").value = "";
     }});
+let detailedTasks = {}
+let importantTask = document.getElementById("important");
 function addTask(task) {
-    myTasks.push(task);
+    detailedTasks[task] = { completed: false };
     let l = document.createElement("l");
     l.textContent = task;
     l.id = "task";
     document.getElementById("taskDiv").appendChild(l);
     document.getElementById("taskName").value = "";
-    console.log(JSON.stringify(myTasks));
+    console.log(JSON.stringify(detailedTasks));
     console.log(l);
+    if (document.getElementById("important").checked) {
+        document.getElementById("task").style.fontWeight = "bold";
+    }
     if (l = document.getElementById("highOrLow").value === "high") {
         document.getElementById("task").style.color = "red";
     }
+
 };
 function taskComplete(task) {
+    detailedTasks[task].completed = true;
     document.getElementById("task").style.textDecoration = "line-through";
-    console.log(JSON.stringify(myTasks));
+    console.log(JSON.stringify(detailedTasks));
 };
-function deleteTask(task) {
-    document.getElementById("taskName") = "";
-    console.log(JSON.stringify(myTasks));
+function deleteList(task) {
+    detailedTasks = {};
+    document.getElementById("taskName").value = "";
+    console.log(JSON.stringify(detailedTasks));
 };
 let newEl2 = document.createElement("u");
 newEl2.id = "taskDiv";
@@ -74,12 +82,13 @@ addTaskBtn.addEventListener("click", function(event){
     if (task) {
         addTask(task);
     }
-    if (task != "") {
+    if (document.getElementById("completed").checked) {
         taskComplete(task);
-    }});
-const deleteTaskBtn = document.getElementById("delete-btn");
-deleteTaskBtn.addEventListener("click", function(event){
+    }
+});
+const deleteListBtn = document.getElementById("delete-btn");
+deleteListBtn.addEventListener("click", function(event){
     event.preventDefault();
     const task = document.getElementById("taskName").value;
-    deleteTask(task);
-    });
+    deleteList(task);
+});
