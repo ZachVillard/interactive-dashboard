@@ -62,12 +62,13 @@ function addTask(task) {
 
 };
 function taskComplete(task) {
-    detailedTasks[task].completed = true;
-    document.getElementById("task").style.textDecoration = "line-through";
-    console.log(JSON.stringify(detailedTasks));
-};
+        if (detailedTasks[task].completed = true) {
+            document.getElementById("task").style.textDecoration = "line-through";
+            console.log(JSON.stringify(detailedTasks));
+}};
 function deleteList(task) {
     detailedTasks = {};
+    document.getElementById("taskDiv").innerHTML = "";
     document.getElementById("taskName").value = "";
     console.log(JSON.stringify(detailedTasks));
 };
@@ -82,9 +83,7 @@ addTaskBtn.addEventListener("click", function(event){
     if (task) {
         addTask(task);
     }
-    if (document.getElementById("completed").checked) {
-        taskComplete(task);
-    }
+    taskComplete(task);
 });
 const deleteListBtn = document.getElementById("delete-btn");
 deleteListBtn.addEventListener("click", function(event){
