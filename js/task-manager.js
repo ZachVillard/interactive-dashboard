@@ -60,7 +60,7 @@ function taskComplete(task) {
     console.log(JSON.stringify(myTasks));
 };
 function deleteTask(task) {
-    task.remove();
+    document.getElementById("taskName") = "";
     console.log(JSON.stringify(myTasks));
 };
 let newEl2 = document.createElement("u");
@@ -80,6 +80,6 @@ addTaskBtn.addEventListener("click", function(event){
 const deleteTaskBtn = document.getElementById("delete-btn");
 deleteTaskBtn.addEventListener("click", function(event){
     event.preventDefault();
-    if (myTasks.length > 0) {
-        deleteTask(myTasks[0]);
-    }});
+    const task = document.getElementById("taskName").value;
+    deleteTask(task);
+    });
