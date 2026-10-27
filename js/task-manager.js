@@ -56,7 +56,7 @@ function addTask(task) {
     }
 };
 function taskComplete(task) {
-    task.style.textDecoration = "line-through";
+    document.getElementById("task").style.textDecoration = "line-through";
     console.log(JSON.stringify(myTasks));
 };
 function deleteTask(task) {
