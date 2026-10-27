@@ -45,10 +45,10 @@ sbmtTaskBtn.addEventListener("click", function(event){
 
 function addTask(task) {
     myTasks.push(task);
-    let l = document.createElement("li");
+    let l = document.createElement("l");
     l.textContent = task;
-    l.id = "newTask";
-    document.getElementById("newTask").appendChild(l);
+    l.id = "taskList";
+    document.getElementById("taskName").appendChild(l);
     console.log(JSON.stringify(myTasks));
     console.log(l);
     if (l = document.getElementById("highOrLow").value === "high") {
@@ -63,6 +63,7 @@ function deleteTask(task) {
     task.remove();
     console.log(JSON.stringify(myTasks));
 };
+
 const addTaskBtn = document.getElementById("submit-btn");
 addTaskBtn.addEventListener("click", function(event){
     event.preventDefault();
