@@ -47,12 +47,12 @@ function addTask(task) {
     myTasks.push(task);
     let l = document.createElement("l");
     l.textContent = task;
-    l.id = "taskList";
+    l.id = "task";
     document.getElementById("taskName").appendChild(l);
     console.log(JSON.stringify(myTasks));
     console.log(l);
     if (l = document.getElementById("highOrLow").value === "high") {
-        l.style.color = "red";
+        document.getElementById("task").style.color = "red";
     }
 };
 function taskComplete(task) {
