@@ -8,7 +8,7 @@
 
 - [X] Add a metric conversion tool.
 - [X] Integrate a task list with array storage.
-- [ ] Add JavaScript logic for a live clock.
+- [X] Add JavaScript logic for a live clock.
 - [X] Add a weekly task goal calculator
 
 ## Weekly Task Goals
@@ -107,3 +107,6 @@ END
 
 ## Task Manager DOM
 <p>This program will simply add a task you enter and submit within it's task list. It will display once you click the "Add Task" button.<p>
+
+## Real-Time Digital Clock and Calendar
+<p>This program will check the time and date and display the results once you load the page.<p>
